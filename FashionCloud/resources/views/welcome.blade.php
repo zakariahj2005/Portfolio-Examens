@@ -22,15 +22,45 @@
                         @auth
                             <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
                         @else
-                            <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
+                            <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">inloggen</a>
 
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+                                <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">aanmelden</a>
                             @endif
                         @endauth
                     </div>
                 @endif
                
+        <div class="wrapper">
+            <header class="header">
+                <h1>header</h1>
+            </header>
+         <div class="block">
+            <div class="side">
+                <a class="side" href="{{url('cart')}}">
+                    <aside class="aside aside1">
+                        <P>WINKEL WAGEN</P>
+                    </aside>
+                </a>
 
+            </div>
+
+            <a class="main" href="{{url('products')}}"> 
+                <article>
+                    Producten
+                </article>
+            </a>
+            <!-- de felxbox van side 3 fixen <a class="side" --> 
+            
+
+            </div>
+        </div>
+            <a class="footer" href="{{url('producten')}}">
+                <footer class="footer">
+                    <div><h1>footer</h1></div>
+                    <div><h1>footer</h1></div>
+                    <div><h1>footer</h1></div>
+                </footer>
+            </a>       
     </body>   
 </html>                     
